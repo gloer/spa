@@ -1,3 +1,52 @@
-h1 {
-    font-size: 100px;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav {
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: column;
+    justify-content: end;
+    margin: 0 30px;
+}
+
+nav a {
+   color: white;
+   padding: 12px;
+   text-decoration: none; 
+}
+
+main {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: auto;
+}
+
+section {
+    scroll-snap-align: center;
+    height: 100vh;
+    padding: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+#orange { 
+    background-color: orange;
+    background-image: url("./images/maneter.jpeg");
+    
+    
+}
+#peru { background-color: peru; }
+#royalblue { background-color: royalblue; }
